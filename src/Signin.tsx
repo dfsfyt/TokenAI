@@ -113,6 +113,10 @@ function SignIn({ onUserSignedIn }: SignInProps) {
     setErrorMessage('');
 
     try {
+      // const { data, error } = await supabase.auth.signUp({
+      //   email: 'dfsfyt@163.com',
+      //   password: '0923fanyuting',
+      // })
       const { data, error } = await supabase.auth.signInWithPassword({
         email,
         password,
